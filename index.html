@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./js/utils/updateTaskStatus.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <title>Task list</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="flex-header">
+            <h1 class="text-center my-4">TODO</h1>
+            <div class="input-group mb-3">
+                <div class="flex-input-box">
+                    <input
+                      type="text"
+                      id="newTaskInput"
+                      class="form-control"
+                      placeholder="CreateTo Do"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" id="addTaskBtn">New add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2>To Do</h2>
+          <ul id="todoList" class="list-group"></ul>
+        </div>
+        <div class="col-md-4">
+          <h2>In progress</h2>
+          <ul id="inProgressList" class="list-group"></ul>
+        </div>
+        <div class="col-md-4">
+          <h2>Done</h2>
+          <ul id="doneList" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
